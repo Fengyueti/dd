@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ZhuActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_play_app"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_71"
+        android:background="#72B8FF"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_36"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:src="@mipmap/back"
+            android:layout_height="@dimen/dp_15" />
+        <TextView
+            android:text="主播认证申请"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_play_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/relative_play_app"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_60"
+        android:layout_marginRight="@dimen/dp_59"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon_one"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:src="@mipmap/one"
+                />
+
+            <ImageView
+                android:id="@+id/icon_line"
+                android:layout_width="@dimen/dp_38"
+                android:layout_height="@dimen/dp_3"
+                android:src="@mipmap/line"
+                android:layout_toRightOf="@+id/icon_one"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_marginTop="@dimen/dp_12"
+                />
+            <ImageView
+                android:id="@+id/icon_two"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:src="@mipmap/two"
+                android:layout_toRightOf="@+id/icon_line"
+                android:layout_marginLeft="@dimen/dp_5"
+                />
+
+            <ImageView
+                android:id="@+id/icon_line2"
+                android:layout_width="@dimen/dp_38"
+                android:layout_height="@dimen/dp_3"
+                android:src="@mipmap/line"
+                android:layout_toRightOf="@+id/icon_two"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_marginTop="@dimen/dp_12"
+
+                />
+
+            <ImageView
+                android:id="@+id/icon_three"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:src="@mipmap/three"
+                android:layout_toRightOf="@+id/icon_line2"
+                android:layout_marginLeft="@dimen/dp_5"
+                />
+
+            <ImageView
+                android:id="@+id/icon_line3"
+                android:layout_width="@dimen/dp_38"
+                android:layout_height="@dimen/dp_3"
+                android:src="@mipmap/line"
+                android:layout_toRightOf="@+id/icon_three"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_marginTop="@dimen/dp_12"
+                />
+
+            <ImageView
+                android:id="@+id/icon_four"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:src="@mipmap/four"
+                android:layout_toRightOf="@+id/icon_line3"
+                android:layout_marginLeft="@dimen/dp_5"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            >
+            <TextView
+                android:id="@+id/text_shenfen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_10"
+                android:text="身份认证"
+                android:textColor="#3577b9"
+                />
+            <TextView
+                android:id="@+id/text_shili"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_10"
+                android:text="实力认证"
+                android:layout_toRightOf="@+id/text_shenfen"
+                android:layout_marginLeft="@dimen/dp_27"
+                android:textColor="#c1c1c1"
+                />
+            <TextView
+                android:id="@+id/text_wanshan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_10"
+                android:text="完善信息"
+                android:layout_toRightOf="@+id/text_shili"
+                android:layout_marginLeft="@dimen/dp_27"
+                android:textColor="#c1c1c1"
+                />
+            <TextView
+                android:id="@+id/text_xitong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_10"
+                android:layout_toRightOf="@+id/text_wanshan"
+                android:layout_marginLeft="@dimen/dp_27"
+                android:text="系统审核"
+                android:textColor="#c1c1c1"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_17"
+        android:layout_below="@+id/linear_play_app"
+        android:background="@color/news_time"
+        tools:ignore="MissingConstraints">
+
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/relative_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line1"
+        android:layout_marginTop="@dimen/dp_13"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:textSize="@dimen/sp_15"
+            android:textColor="#484848"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请填写真实姓名"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#d7d7d7"
+            android:layout_marginLeft="@dimen/dp_17"
+            android:layout_toRightOf="@+id/text_name"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="@null"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_17"
+        android:layout_below="@+id/relative_name"
+        android:background="@color/news_time"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        tools:ignore="MissingConstraints">
+    </View>
+    <RelativeLayout
+        android:id="@+id/relative_shenfen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_11"
+        android:layout_below="@+id/view_line2"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/text_shenfenzheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份证号"
+            android:textSize="@dimen/sp_15"
+            android:textColor="#484848"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请填写本人身份证号码"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#d7d7d7"
+            android:layout_marginLeft="@dimen/dp_17"
+            android:layout_toRightOf="@+id/text_shenfenzheng"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="@null"
+            />
+    </RelativeLayout>
+    <View
+        android:id="@+id/view_line3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_17"
+        android:layout_below="@+id/relative_shenfen"
+        android:background="@color/news_time"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+
+        tools:ignore="MissingConstraints">
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/relative_big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_17"
+        android:layout_below="@+id/view_line3"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:id="@+id/relative_add_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_shape"
+            >
+
+            <ImageButton
+                android:id="@+id/image_btn_one"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:src="@mipmap/add_icon"
+                android:layout_centerInParent="true"
+                />
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_zhengmian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请上传身份证正面照片"
+            android:textColor="#9a9a9a"
+            android:textSize="@dimen/sp_9"
+            android:layout_below="@+id/relative_add_one"
+            android:layout_marginTop="@dimen/dp_9"
+            android:layout_marginLeft="@dimen/dp_35"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relative_add_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_shape"
+            android:layout_toRightOf="@+id/relative_add_one"
+            android:layout_below="@+id/text_zhengmian"
+            android:layout_alignParentLeft="true"
+
+
+            >
+
+            <ImageButton
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:src="@mipmap/add_icon"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_shouchi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请上传手持身份证照片"
+            android:textColor="#9a9a9a"
+            android:textSize="@dimen/sp_9"
+            android:layout_below="@+id/relative_add_three"
+            android:layout_marginTop="@dimen/dp_9"
+            android:layout_marginLeft="@dimen/dp_35"
+            />
+        <RelativeLayout
+            android:id="@+id/relative_add_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_shape"
+            android:layout_toRightOf="@+id/relative_add_one"
+            android:layout_marginLeft="@dimen/dp_15"
+            >
+
+            <ImageButton
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:src="@mipmap/add_icon"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/text_fanmian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请上传身份证反面照片"
+            android:textColor="#9a9a9a"
+            android:textSize="@dimen/sp_9"
+            android:layout_below="@+id/relative_add_two"
+            android:layout_marginTop="@dimen/dp_9"
+            android:layout_marginLeft="@dimen/dp_215"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_big"
+        android:layout_marginTop="@dimen/dp_24"
+
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/text_diyihang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注:身份信息关联绑定的银行账户,绑定后无法进行修改,所以请务必填写本人真"
+            android:textSize="@dimen/sp_9"
+            android:textColor="#a4a4a4"
+            />
+
+        <TextView
+            android:id="@+id/text_dierhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="实的身份信息，否则无法通过审核且无法提取佣金。"
+            android:textSize="@dimen/sp_10"
+            android:textColor="#a4a4a4"
+            android:layout_below="@+id/text_diyihang"
+            android:layout_marginLeft="@dimen/dp_5"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_below="@+id/relative_text"
+        android:layout_centerInParent="true"
+
+        tools:ignore="MissingConstraints">
+
+        <CheckBox
+            android:id="@+id/checkbox_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <TextView
+            android:id="@+id/text_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同意"
+            android:textSize="@dimen/sp_9"
+            android:textColor="#a4a4a4"
+            android:layout_toRightOf="@+id/checkbox_circle"
+            android:layout_marginLeft="@dimen/dp_2"
+            android:layout_marginTop="@dimen/dp_8"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《鲨鱼陪玩协议》"
+            android:textSize="@dimen/sp_10"
+            android:textColor="#3577b9"
+            android:layout_toRightOf="@+id/text_agree"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_8"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_agree"
+        android:layout_marginLeft="@dimen/dp_88"
+        android:layout_marginRight="@dimen/dp_89"
+        android:layout_marginTop="@dimen/dp_16"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_shape"
+            android:text="下一步"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_15"
+
+            />
+    </RelativeLayout>
+</RelativeLayout>
